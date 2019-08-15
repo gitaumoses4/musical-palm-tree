@@ -1,0 +1,65 @@
+$accent: #0f0e1d;
+
+textarea {
+    width: 500px;
+    height: 200px;
+    background: transparent;
+    color: white;
+}
+
+.textarea {
+    display: grid;
+    grid-gap: 1em;
+    justify-items: center;
+}
+
+button {
+    background: lighten($accent, 10%);
+    color: white;
+    padding: 1em;
+    outline: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 0 10px 4px #444
+    }
+}
+
+.App {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background: #0f0e1d;
+}
+
+
+.chooser {
+    display: grid;
+    width: 500px;
+
+    .item {
+        .header {
+            cursor: pointer;
+            background: #999;
+            padding: 0.5em;
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: start;
+            grid-gap: 1em;
+            align-items: center;
+
+            span {
+                font-size: 1em;
+            }
+
+            em {
+                font-size: 2em;
+            }
+
+            &.value {
+                background: #525055;
+                color: white;
+            }
+        }
+    }
+}
